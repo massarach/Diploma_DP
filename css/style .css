@@ -1,0 +1,368 @@
+@font-face {
+    font-family: "OpenSans";
+    src: url(../fonts/OpenSans-Regular.woff);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url(../fonts/OpenSans-Bold.woff);
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-decoration: none;
+
+    font-family: "OpenSans", Arial, sans-serif;
+}
+
+body,
+section,
+.app-button,
+.num-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body,
+section,
+.app-button {
+    flex-direction: column;
+}
+
+body {
+    max-width: 640px;
+}
+
+section,
+.img-section {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.header-section {
+    background: url(../images/football_767.jpg) no-repeat top center #161233;
+}
+
+.footer-section {
+    background: url(../images/game_767.jpg) no-repeat top center #161233;
+}
+
+.header-section,
+.footer-section {
+    position: relative;
+    align-items: center;
+
+    min-height: 566px;
+
+    background-size: cover;
+}
+
+.header-section::before,
+.footer-section::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #161233;
+    opacity: 0.9;
+}
+
+.main-logo {
+    width: 8.75rem;
+    margin-top: 2rem;
+
+    fill: #fff;
+}
+
+.title-1,
+.title-2 {
+    font-weight: bold;
+    font-size: 1.75rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.title-1 {
+    padding-top: 7.8rem;
+    padding-bottom: 1.25rem;
+}
+
+.title-2 {
+    padding-left: 20%;
+    padding-bottom: 5rem;
+}
+
+.main-logo,
+.main-title,
+.app-buttons,
+.footer-logo,
+.last-logo,
+.last-title {
+    z-index: 2;
+}
+
+.app-button {
+    position: relative;
+    align-items: flex-start;
+    justify-content: center;
+
+    width: 17.5rem;
+    height: 2rem;
+    margin-bottom: 0.75rem;
+
+    font-size: 0.5rem;
+    color: #fff;
+    text-transform: uppercase;
+
+    border: none;
+    border-radius: 1rem;
+
+    background-color: #5e42b0;
+
+    cursor: pointer;
+}
+
+.apple-button::before,
+.google-button::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    left: 4.5rem;
+
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.apple-button::before {
+    background: url(../svg/apple_logo_black.svg) no-repeat center center;
+}
+
+.google-button::before {
+    background: url(../svg/google-play.svg) no-repeat center center;
+}
+
+.button-text,
+.button-text-bold {
+    padding-left: 6.75rem;
+}
+
+.button-text-bold {
+    font-weight: bold;
+}
+
+.img-title {
+    padding-top: 1rem;
+    padding-bottom: 15rem;
+
+    font-weight: bold;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #e7e7e7;
+}
+
+.img-section {
+    position: relative;
+
+    background-color: #fff;
+}
+
+.main-section-1::after {
+    content: "";
+    position: absolute;
+    top: 4.7rem;
+
+    width: 100%;
+    height: 100%;
+
+    background: url(../images/footballer_192.png) no-repeat center center;
+}
+
+.main-section-2,
+.main-section-6 {
+    padding-top: 5rem;
+
+    background-color: #fafafa;
+}
+
+.num-container {
+    align-items: center;
+    padding-bottom: 1.25rem;
+}
+
+.num {
+    margin-right: 0.5rem;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    border-bottom: 0.25rem solid #5e42b0;
+}
+
+.num-black {
+    color: #000;
+
+    border-bottom: 0.25rem solid #fff;
+}
+
+.num-white {
+    color: #5e42b0;
+
+    border-bottom: 0.25rem solid #fff;
+}
+
+.num-title {
+    font-weight: bold;
+    font-size: 23px;
+    text-transform: uppercase;
+    color: #c1c1c1;
+}
+
+.num-content {
+    padding-bottom: 3.125rem;
+
+    font-size: 15px;
+}
+
+.num-content-white,
+.img-num-style {
+    color: #fff;
+}
+
+.main-section-3,
+.main-section-4,
+.main-section-7,
+.main-section-8 {
+    padding-top: 3.125rem;
+}
+
+.main-section-3,
+.main-section-7 {
+    background-color: #f5f4f9;
+}
+
+.main-section-4 {
+    background-color: #5e42b0;
+}
+
+.main-section-5::after {
+    content: "";
+    position: absolute;
+    top: 4.7rem;
+
+    width: 100%;
+    height: 100%;
+
+    background: url(../images/basketballer_302.png) no-repeat center center;
+}
+
+.main-section-8 {
+    background-color: #090c35;
+}
+
+.main-section-9 {
+    background: url(../images/be-active_640.jpg) no-repeat center center;
+}
+
+.img-num-style {
+    font-size: 14px;
+    font-weight: bold;
+
+    border-bottom: 0.25rem solid #8f7bc8;
+}
+
+.img-num {
+    position: absolute;
+    top: calc(100% - 57px);
+
+    background-color: #5e42b0;
+    border: 25px solid #5e42b0;
+}
+
+.content-section {
+    background-color: #fff;
+}
+
+.content-title {
+    padding-top: 1.75rem;
+    padding-bottom: 1.5rem;
+
+    font-weight: bold;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    color: #e7e7e7;
+}
+
+.text-content {
+    padding-bottom: 5rem;
+
+    font-size: 1rem;
+}
+
+.main-section-11 {
+    background: url(../images/find-contact_640.jpg) no-repeat center center;
+}
+
+.main-section-13 {
+    background: url(../images/work-it_640.jpg) no-repeat center center;
+}
+
+.img-section {
+    min-height: 350px;
+
+    background-size: cover;
+}
+
+.footer-logo {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-top: 6.125rem;
+    margin-bottom: 3rem;
+
+    fill: #fff;
+    border: 0.5rem solid #5e42b0;
+    border-radius: 0.5rem;
+    background-color: #5e42b0;
+}
+
+.last-title-1,
+.last-title-2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.last-title-1 {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.last-title-2 {
+    font-size: 0.875rem;
+    color: #9b8ec1;
+}
+
+.last-title {
+    margin-bottom: 4.375rem;
+}
+
+.last-logo {
+    width: 8.75rem;
+    margin-top: auto;
+    margin-bottom: 0.25rem;
+
+    fill: #fff;
+}
